@@ -71,7 +71,7 @@ class CategoryDetailPresenterImpl: CategoryDetailPresenter {
                  self.category.pdfList[index.row].isVisited = true
             }
         }
-        if let index = self.model?.categories.firstIndex{$0.name == category.name} {
+        if let index = self.model?.categories.firstIndex(where: {$0.name == category.name}) {
             model?.categories[index] = self.category
             guard let model = model else { return }
             usecase.saveCategoryModelInDB(category: model, person: person)
