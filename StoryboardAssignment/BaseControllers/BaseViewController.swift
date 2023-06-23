@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
         let menuButton = UIButton()
         menuButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         menuButton.addTarget(self, action: #selector(leftClicked), for:    .touchUpInside)
-        var background = UIImageView(image: UIImage(named: "back"))
+        let background = UIImageView(image: UIImage(named: "back"))
         background.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         menuButton.addSubview(background)
 

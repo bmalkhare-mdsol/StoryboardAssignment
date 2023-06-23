@@ -12,7 +12,6 @@
 		275FB2552A39A06200EE28DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FB2542A39A06200EE28DE /* SceneDelegate.swift */; };
 		275FB2572A39A06200EE28DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FB2562A39A06200EE28DE /* ViewController.swift */; };
 		275FB25A2A39A06200EE28DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275FB2582A39A06200EE28DE /* Main.storyboard */; };
-		275FB25C2A39A06500EE28DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275FB25B2A39A06500EE28DE /* Assets.xcassets */; };
 		275FB25F2A39A06500EE28DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275FB25D2A39A06500EE28DE /* LaunchScreen.storyboard */; };
 		275FB26A2A39A06500EE28DE /* StoryboardAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FB2692A39A06500EE28DE /* StoryboardAssignmentTests.swift */; };
 		275FB2742A39A06500EE28DE /* StoryboardAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FB2732A39A06500EE28DE /* StoryboardAssignmentUITests.swift */; };
@@ -48,6 +47,7 @@
 		279B42082A40211200930C75 /* Meeting at Conference.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 279B42052A40211200930C75 /* Meeting at Conference.mp4 */; };
 		279B42092A40211200930C75 /* Meeting In Corridor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 279B42062A40211200930C75 /* Meeting In Corridor.mp4 */; };
 		279B42152A41663700930C75 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B42142A41663700930C75 /* ImageViewController.swift */; };
+		279E92222A456298008B1B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279E92212A456298008B1B9D /* Assets.xcassets */; };
 		27CE3FE42A41B16B0093D45D /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 27CE3FE32A41B16B0093D45D /* Category.json */; };
 		27CE3FE62A41B1C50093D45D /* Attend To Stock.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27CE3FE52A41B1C50093D45D /* Attend To Stock.mp4 */; };
 		27CE3FE82A41B1F30093D45D /* Women On Mission.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27CE3FE72A41B1F30093D45D /* Women On Mission.mp4 */; };
@@ -106,7 +106,6 @@
 		275FB2542A39A06200EE28DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		275FB2562A39A06200EE28DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		275FB2592A39A06200EE28DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		275FB25B2A39A06500EE28DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/bmalkhare/Desktop/StoryboardAssignment/StoryboardAssignment/Assets.xcassets; sourceTree = "<absolute>"; };
 		275FB25E2A39A06500EE28DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275FB2602A39A06500EE28DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275FB2652A39A06500EE28DE /* StoryboardAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +145,7 @@
 		279B42052A40211200930C75 /* Meeting at Conference.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Meeting at Conference.mp4"; sourceTree = "<group>"; };
 		279B42062A40211200930C75 /* Meeting In Corridor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Meeting In Corridor.mp4"; sourceTree = "<group>"; };
 		279B42142A41663700930C75 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		279E92212A456298008B1B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27CE3FE32A41B16B0093D45D /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
 		27CE3FE52A41B1C50093D45D /* Attend To Stock.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Attend To Stock.mp4"; sourceTree = "<group>"; };
 		27CE3FE72A41B1F30093D45D /* Women On Mission.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Women On Mission.mp4"; sourceTree = "<group>"; };
@@ -235,6 +235,7 @@
 		275FB2512A39A06200EE28DE /* StoryboardAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				279E92212A456298008B1B9D /* Assets.xcassets */,
 				277D1B5A2A4463AE0024768A /* LoginView */,
 				277D1B572A444BD10024768A /* CommonUtility */,
 				27CE40332A42930C0093D45D /* BaseControllers */,
@@ -251,7 +252,6 @@
 				275FB2522A39A06200EE28DE /* AppDelegate.swift */,
 				275FB2542A39A06200EE28DE /* SceneDelegate.swift */,
 				275FB2582A39A06200EE28DE /* Main.storyboard */,
-				275FB25B2A39A06500EE28DE /* Assets.xcassets */,
 				275FB25D2A39A06500EE28DE /* LaunchScreen.storyboard */,
 				275FB2602A39A06500EE28DE /* Info.plist */,
 				2774E9F02A3AC9CB00EA7A71 /* CommonUtilityClass.swift */,
@@ -587,7 +587,6 @@
 				279B41E52A3B9A5B00930C75 /* CategoryListTableViewCell.xib in Resources */,
 				27CE40002A41B6780093D45D /* Electronic Drums.mp4 in Resources */,
 				27CE3FEA2A41B2220093D45D /* Running.mp4 in Resources */,
-				275FB25C2A39A06500EE28DE /* Assets.xcassets in Resources */,
 				27CE402E2A42759A0093D45D /* The-Sports-Rules-Book.pdf in Resources */,
 				27CE40312A4275A30093D45D /* Guide6 Engg.pdf in Resources */,
 				2774E9FA2A3ACD7200EA7A71 /* TextFieldViewTableViewCell.xib in Resources */,
@@ -596,6 +595,7 @@
 				27CE3FF62A41B44A0093D45D /* Players Battle.mp4 in Resources */,
 				27CE40302A4275A00093D45D /* Chorale Preludes.pdf in Resources */,
 				275FB25A2A39A06200EE28DE /* Main.storyboard in Resources */,
+				279E92222A456298008B1B9D /* Assets.xcassets in Resources */,
 				27CE402B2A42758D0093D45D /* Complete score.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -897,7 +897,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45E45B6CF2FA4ABC12F477EF /* Pods-StoryboardAssignment.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -926,7 +926,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 216A2750B6A91D8FEB839CD5 /* Pods-StoryboardAssignment.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
