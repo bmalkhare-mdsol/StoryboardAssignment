@@ -1,0 +1,6 @@
+framework module Pods_StoryboardAssignment_StoryboardAssignmentUITests {
+  umbrella header "Pods-StoryboardAssignment-StoryboardAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

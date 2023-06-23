@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldViewTableViewCell" rowHeight="98" id="KGk-i7-Jjw" customClass="TextFieldViewTableViewCell" customModule="StoryboardAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="n5c-5T-c0D">
+                        <rect key="frame" x="10" y="10" width="300" height="60"/>
+                        <color key="backgroundColor" red="0.92892246474379614" green="0.93572159041050729" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="HS7-OA-Cxb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etc-8N-daw">
+                        <rect key="frame" x="260" y="10" width="50" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="PJP-Yd-arQ"/>
+                        </constraints>
+                        <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="eye" catalog="system"/>
+                        <connections>
+                            <action selector="eyeButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LFe-0E-bOl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="etc-8N-daw" firstAttribute="trailing" secondItem="n5c-5T-c0D" secondAttribute="trailing" id="32D-o0-2kW"/>
+                    <constraint firstItem="etc-8N-daw" firstAttribute="bottom" secondItem="n5c-5T-c0D" secondAttribute="bottom" id="LK0-cc-y0N"/>
+                    <constraint firstAttribute="bottom" secondItem="n5c-5T-c0D" secondAttribute="bottom" constant="10" id="cEY-Dx-yw0"/>
+                    <constraint firstAttribute="trailing" secondItem="n5c-5T-c0D" secondAttribute="trailing" constant="10" id="idQ-xK-iHp"/>
+                    <constraint firstItem="etc-8N-daw" firstAttribute="top" secondItem="n5c-5T-c0D" secondAttribute="top" id="o1M-KL-0KG"/>
+                    <constraint firstItem="n5c-5T-c0D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rUc-8I-5fx"/>
+                    <constraint firstItem="n5c-5T-c0D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tGm-8V-YW4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eyeButton" destination="etc-8N-daw" id="RhY-Pk-AjW"/>
+                <outlet property="inputTextField" destination="n5c-5T-c0D" id="zOl-GE-bdg"/>
+            </connections>
+            <point key="canvasLocation" x="100.76335877862596" y="38.732394366197184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye" catalog="system" width="128" height="79"/>
+    </resources>
+</document>

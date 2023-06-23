@@ -1,0 +1,307 @@
+{
+    "categories": [
+        {
+            "name": "Business",
+            "iconName": "Business",
+            "pdfList": [
+                {
+                    "id": "1",
+                    "type": "pdf",
+                    "name": "Fundamentals of Business",
+                    "isVisited": false,
+                    "category_slug": "Fundamentals of Business"
+                },
+                {
+                    "id": "2",
+                    "type": "pdf",
+                    "name": "Entrepreneurs-Guide",
+                    "isVisited": false,
+                    "category_slug": "Entrepreneurs-Guide"
+                },
+                {
+                    "id": "3",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Principles Business",
+                    "category_slug": "Principles Business"
+                }
+            ],
+            "videoList": [
+                {
+                    "id": "1",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Women On Mission",
+                    "category_slug": "Women On Mission"
+                },
+                {
+                    "id": "2",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Attend To Stock",
+                    "category_slug": "Attend To Stock"
+                },
+                {
+                    "id": "3",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Coworking Space",
+                    "category_slug": "Coworking Space"
+                },
+                {
+                    "id": "4",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Meeting In Corridor",
+                    "category_slug": "Meeting In Corridor"
+                },
+                {
+                    "id": "5",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Meeting at Conference",
+                    "category_slug": "Meeting at Conference"
+                }
+            ],
+            "imagesList": [
+                {
+                    "id": "1",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Achitecture",
+                    "category_slug": "Achitecture"
+                },
+                {
+                    "id": "2",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Data Analysis",
+                    "category_slug": "DataAnalysis"
+                },
+                {
+                    "id": "3",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Data Collection",
+                    "category_slug": "DataCollection"
+                },
+                {
+                    "id": "4",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Data Integration",
+                    "category_slug": "DataIntegration"
+                },
+                {
+                    "id": "5",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Finanace",
+                    "category_slug": "Finanace"
+                }
+            ]
+        },
+        {
+            "name": "Sport",
+            "iconName": "Sports",
+            "pdfList": [
+                {
+                    "id": "1",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Benefits of Sports",
+                    "category_slug": "Benefits of Sports"
+                },
+                {
+                    "id": "2",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Sports and Games",
+                    "category_slug": "Sports and Games"
+                },
+                {
+                    "id": "3",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "The-Sports-Rules-Book",
+                    "category_slug": "The-Sports-Rules-Book"
+                }
+            ],
+            "videoList": [
+                {
+                    "id": "1",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Female Soccer",
+                    "category_slug": "Female soccer"
+                },
+                {
+                    "id": "2",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Running",
+                    "category_slug": "Running"
+                },
+                {
+                    "id": "3",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Players Battle",
+                    "category_slug": "Players Battle"
+                },
+                {
+                    "id": "4",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Applauding Fans",
+                    "category_slug": "Applauding Fans"
+                }
+            ],
+            "imagesList": [
+                {
+                    "id": "1",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Cricket",
+                    "category_slug": "Cricket"
+                },
+                {
+                    "id": "2",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Football",
+                    "category_slug": "Football"
+                },
+                {
+                    "id": "3",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Golf",
+                    "category_slug": "Golf"
+                },
+                {
+                    "id": "4",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Hockey",
+                    "category_slug": "Hockey"
+                },
+                {
+                    "id": "5",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Running",
+                    "category_slug": "Running"
+                },
+                {
+                    "id": "6",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Table Tennis",
+                    "category_slug": "TableTennis"
+                }
+            ]
+        },
+        {
+            "name": "Music",
+            "iconName": "Music",
+            "pdfList": [
+                {
+                    "id": "1",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Spiritual Songs",
+                    "category_slug": "Spiritual Songs"
+                },
+                {
+                    "id": "2",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Suite No",
+                    "category_slug": "Suite No"
+                },
+                {
+                    "id": "3",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Complete score",
+                    "category_slug": "Complete score"
+                },
+                {
+                    "id": "4",
+                    "type": "pdf",
+                    "isVisited": false,
+                    "name": "Chorale Preludes",
+                    "category_slug": "Chorale Preludes"
+                }
+            ],
+            "videoList": [
+                {
+                    "id": "1",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "While Traveling",
+                    "category_slug": "While Traveling"
+                },
+                {
+                    "id": "2",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Crowd on Oncert",
+                    "category_slug": "Crowd on Oncert"
+                },
+                {
+                    "id": "3",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Radiant Gentleman",
+                    "category_slug": "Radiant Gentleman"
+                },
+                {
+                    "id": "4",
+                    "type": "video",
+                    "isVisited": false,
+                    "name": "Electronic Drums",
+                    "category_slug": "Electronic Drums"
+                }
+            ],
+            "imagesList": [
+                {
+                    "id": "1",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Apple Live Music",
+                    "category_slug": "AppleLiveMusic"
+                },
+                {
+                    "id": "2",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Old Memories",
+                    "category_slug": "OldMemories"
+                },
+                {
+                    "id": "4",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Rise Star",
+                    "category_slug": "RiseStar"
+                },
+                {
+                    "id": "2",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "Sound Track",
+                    "category_slug": "SoundTrack"
+                },
+                {
+                    "id": "2",
+                    "type": "image",
+                    "isVisited": false,
+                    "name": "UK Festival",
+                    "category_slug": "UK Festival"
+                }
+            ]
+        }
+    ]
+}
