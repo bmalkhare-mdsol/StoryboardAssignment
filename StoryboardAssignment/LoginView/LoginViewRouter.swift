@@ -16,7 +16,7 @@ class LoginViewRouterImpl: LoginViewRouter {
     init(viewController: LoginViewController) {
         self.viewController = viewController
     }
-
+    
     func navigateTocategoriesListScreen(person: Person) {
         let vc =  CommonUtility.getViewController(storyboardName: StoryBordIds.main, bundleID: StoryBordIds.categoriesListController) as? CategoriesListController
         let configurator = CategoriesListConfiguratorImpl(viewController: vc!)

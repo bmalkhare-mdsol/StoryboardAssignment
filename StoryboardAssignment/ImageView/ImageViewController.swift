@@ -11,10 +11,7 @@ import SQLite3
 class ImageViewController: UIViewController {
     var clickedImage: UIImage?
     @IBOutlet weak var imageView: UIImageView!
-    override func viewDidLoad() {
-        
-    }
-    
+   
     override func viewWillAppear(_ animated: Bool) {
         if let image = clickedImage {
             imageView.image = image

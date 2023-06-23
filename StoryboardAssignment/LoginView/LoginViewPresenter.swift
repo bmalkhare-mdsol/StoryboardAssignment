@@ -16,13 +16,14 @@ enum LoginViewConstant: String{
 protocol LoginViewPresenter {
     func loginTapped(username: String, password: String)
 }
+
 protocol LoginView {
     func showToast(text: String)
     func showAlert(text: String)
 }
 
 class LoginViewPresenterImpl: LoginViewPresenter {
-   
+    
     var view: LoginView?
     var person: Person?
     var router: LoginViewRouter
@@ -32,6 +33,7 @@ class LoginViewPresenterImpl: LoginViewPresenter {
         self.view = view
         self.usecase = usecase
     }
+    
     func loginTapped(username: String, password: String) {
         if let person = usecase.getPersonFromDB(username: username, password: password) {
             router.navigateTocategoriesListScreen(person: person)
@@ -39,6 +41,6 @@ class LoginViewPresenterImpl: LoginViewPresenter {
         }
         self.view?.showAlert(text: LoginViewConstant.invalidUser.rawValue)
     }
-
+    
     
 }

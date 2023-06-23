@@ -15,6 +15,7 @@ protocol SignUpPresenter {
 class SignUpPresenterImpl: SignUpPresenter {
     
     var router: SignUpRouter
+    
     init(router: SignUpRouter) {
         self.router = router
     }
@@ -22,8 +23,8 @@ class SignUpPresenterImpl: SignUpPresenter {
     func registerPressed() {
         router.navigateToRegisterScreen()
     }
+    
     func loginPressed() {
         router.navigateToLoginScreen()
     }
-
 }

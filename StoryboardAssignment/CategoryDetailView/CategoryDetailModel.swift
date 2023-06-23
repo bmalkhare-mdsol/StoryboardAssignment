@@ -8,9 +8,7 @@
 import Foundation
 
 struct CategoryDetailModel: Codable {
-    var categories: [Category] = []
-    
-    
+    var categories: [Category] = [] 
 }
 
 struct Category: Codable{
@@ -23,9 +21,11 @@ struct Category: Codable{
     var isPDFVisited: Bool {
         return pdfList.filter({ $0.isVisited}).count == pdfList.count
     }
+    
     var isImagesVisited: Bool {
         return imagesList.filter({ $0.isVisited}).count == imagesList.count
     }
+    
     var isVideoVisited: Bool {
         return videoList.filter({ $0.isVisited}).count == videoList.count
     }
@@ -33,7 +33,6 @@ struct Category: Codable{
     var allElementsVisited: Bool{
         return isPDFVisited && isImagesVisited && isVideoVisited
     }
-    
 }
 
 struct CategoryItem: Codable{
@@ -51,6 +50,7 @@ enum CategoryType: String, CaseIterable{
     case pdf
     case video
     case image
+    
     func getIndex() -> Int {
         switch self {
         case .pdf:
@@ -59,10 +59,11 @@ enum CategoryType: String, CaseIterable{
             return 1
         case .image:
             return 2
-        
+            
         }
     }
-   static func getCategoryType(index: Int) -> CategoryType? {
+    
+    static func getCategoryType(index: Int) -> CategoryType? {
         switch index {
         case 0:
             return .pdf
@@ -74,6 +75,7 @@ enum CategoryType: String, CaseIterable{
             return nil
         }
     }
+    
     func getCategoryNames() -> String {
         switch self {
         case .pdf:
@@ -82,7 +84,6 @@ enum CategoryType: String, CaseIterable{
             return "Videos"
         case .image:
             return "Images"
-        
         }
     }
 }

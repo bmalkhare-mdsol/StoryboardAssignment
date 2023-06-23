@@ -12,7 +12,7 @@ protocol LoginUsecase {
 
 class LoginUsecaseImpl: LoginUsecase {
     let dbHelper = DBHelper()
-   
+    
     func getPersonFromDB(username: String, password: String) -> Person? {
         let persons = dbHelper.read()
         if let person = persons.filter({$0.name == username && $0.password == password}).first {
@@ -20,5 +20,5 @@ class LoginUsecaseImpl: LoginUsecase {
         }
         return nil
     }
-   
+    
 }

@@ -13,7 +13,7 @@ protocol TextfieldTapDelegate: AnyObject{
     func updatePassword(text: String)
     func updateConfirmPassword(text: String)
     func updateUserName(text: String)
-
+    
 }
 
 class TextFieldViewTableViewCell: UITableViewCell {
@@ -21,8 +21,8 @@ class TextFieldViewTableViewCell: UITableViewCell {
     @IBOutlet weak var eyeButton: UIButton!
     static var identifier = "TextFieldViewTableViewCell"
     weak var delegate: TextfieldTapDelegate?
-    
     @IBOutlet weak var inputTextField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         inputTextField.borderStyle = .roundedRect
@@ -32,6 +32,7 @@ class TextFieldViewTableViewCell: UITableViewCell {
         tapgestureRecogniser.numberOfTapsRequired = 1
         inputTextField.addGestureRecognizer(tapgestureRecogniser)
     }
+    
     @objc private func handleTap(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended{
             inputTextField.becomeFirstResponder()
@@ -73,7 +74,7 @@ class TextFieldViewTableViewCell: UITableViewCell {
             break
         }
     }
-   
+    
 }
 
 
@@ -84,7 +85,6 @@ extension TextFieldViewTableViewCell: UITextFieldDelegate{
             switch type {
             case .gender,.birthDate:
                 type == .birthDate ? self.delegate?.birthDateTapped() : self.delegate?.genderTapped(textField: textField)
-                
                 return false
             default:
                 return true
@@ -92,12 +92,13 @@ extension TextFieldViewTableViewCell: UITextFieldDelegate{
         }
         return false
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            if (string == " ") {
-              return false
-            }
-            return true
+        if (string == " ") {
+            return false
         }
+        return true
+    }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {  //delegate method
         if let tag = RegisterViewItem(rawValue: textField.tag) {

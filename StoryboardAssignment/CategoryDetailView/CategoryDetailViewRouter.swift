@@ -17,5 +17,4 @@ class CategoryDetailRouterImpl: CategoryDetailRouter {
     init(viewController: CategoryDetailViewController) {
         self.viewController = viewController
     }
-
 }

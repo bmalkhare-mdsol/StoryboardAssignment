@@ -17,7 +17,7 @@ protocol CategoriesListPresenter {
     func getCategory(row: Int) -> Category?
     func getNavigationHeaderTitle() -> String
     func viewWillAppear()
-    func isCellInteractive(index: IndexPath) -> Bool 
+    func isCellInteractive(index: IndexPath) -> Bool
     
 }
 protocol CategoriesListView {
@@ -30,6 +30,7 @@ class CategoriesListPresenterImpl: CategoriesListPresenter {
     var model: CategoryDetailModel?
     var person: Person
     var view:CategoriesListView
+    
     init(router: CategoriesListRouter, usecase: CategoryDetailsUseCase, person: Person, view:CategoriesListView) {
         self.router = router
         self.usecase = usecase
@@ -54,7 +55,7 @@ class CategoriesListPresenterImpl: CategoriesListPresenter {
         }
         return false
     }
-
+    
     func getCategory() {
         if let categoryModel = usecase.getCategoryModelForPerson(person: person) {
             self.model = categoryModel
@@ -65,10 +66,11 @@ class CategoriesListPresenterImpl: CategoriesListPresenter {
     func getCategory(row: Int) -> Category? {
         return model?.categories[row] ?? nil
     }
+    
     func numberOfRows() -> Int {
         return model?.categories.count ?? 0
     }
-
+    
     func cellTapped(index: Int) {
         if let category = model?.categories[index] {
             router.navigateToCategoryDetailScreen(selectedCategory: category, person: person, model: model)

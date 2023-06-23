@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class BaseViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let menuButton = UIButton()
@@ -16,7 +17,6 @@ class BaseViewController: UIViewController {
         let background = UIImageView(image: UIImage(named: "back"))
         background.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         menuButton.addSubview(background)
-
         let menuBarButtonItem = UIBarButtonItem(customView: menuButton)
         navigationItem.leftBarButtonItems = [menuBarButtonItem]
     }
@@ -24,6 +24,7 @@ class BaseViewController: UIViewController {
     @objc func leftClicked() {
         self.leftTapped()
     }
+    
     @objc func leftTapped() {
         
     }

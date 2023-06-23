@@ -19,7 +19,6 @@ class CategoriesListRouterImpl: CategoriesListRouter {
     init(viewController: CategoriesListController) {
         self.viewController = viewController
     }
-
     
     func navigateToCategoryDetailScreen(selectedCategory: Category, person: Person, model: CategoryDetailModel?) {
         let vc =  CommonUtility.getViewController(storyboardName: StoryBordIds.main, bundleID: StoryBordIds.categoryDetailViewController) as? CategoryDetailViewController
@@ -28,5 +27,5 @@ class CategoriesListRouterImpl: CategoriesListRouter {
         vc?.configurator = configurator
         self.viewController.navigationController?.pushViewController(vc!, animated: true)
     }
-   
+    
 }

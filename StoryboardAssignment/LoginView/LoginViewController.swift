@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         usernameTextField.disableAutoFill()
         passwordTextField.disableAutoFill()
-
         configurator = LoginViewConfiguratorImpl(viewController: self)
         configurator?.configure()
         usernameTextField.delegate = self
@@ -36,6 +35,7 @@ class LoginViewController: UIViewController {
     @IBAction func eyeIconTapped(_ sender: UIButton) {
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
     }
+    
     @IBAction func loginTapped(_ sender: UIButton) {
         guard let username = usernameTextField.text else {
             self.showToast(text: LoginViewConstant.enterUsername.rawValue)
@@ -55,6 +55,7 @@ extension LoginViewController:  LoginView {
     func showToast(text: String) {
         self.showToastMessage(message: text)
     }
+    
     func showAlert(text: String) {
         self.showAlert(message: text)
     }

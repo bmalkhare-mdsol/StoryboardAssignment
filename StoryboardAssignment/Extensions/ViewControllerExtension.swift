@@ -13,6 +13,7 @@ extension UIViewController {
         return super.awakeAfter(using: coder)
     }
 }
+
 extension UIViewController {
     
     func showToastMessage(message: String, font: UIFont = .systemFont(ofSize: 12.0)) {
@@ -38,7 +39,7 @@ extension UIViewController {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         self.present(alert, animated: true)
         let duration: Double = 4
-            
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
             alert.dismiss(animated: true)
         }

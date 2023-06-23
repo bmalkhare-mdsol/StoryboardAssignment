@@ -14,16 +14,18 @@ class CategoryDetailViewController: BaseViewController {
     var configurator: CategoryDetailViewConfigurator?
     var presenter: CategoryDetailPresenter!
     var pdfView:PDFView?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.categoryDetailTable.register(UINib(nibName: CategoryListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: CategoryListTableViewCell.identifier)
         categoryDetailTable.separatorStyle = .none
         self.navigationItem.title = presenter.getNavigationHeaderTitle()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         presenter.viewWillAppear()
     }
+    
     override func leftTapped() {
         if pdfView != nil {
             self.pdfView?.removeFromSuperview()
@@ -35,18 +37,16 @@ class CategoryDetailViewController: BaseViewController {
     }
     
     func loadPDF(){
-         pdfView = PDFView()
-        
+        pdfView = PDFView()
         pdfView?.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(pdfView ?? PDFView())
-
         pdfView?.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         pdfView?.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         pdfView?.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         pdfView?.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
     
-
+    
 }
 extension CategoryDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,6 +56,7 @@ extension CategoryDetailViewController: UITableViewDelegate, UITableViewDataSour
     func numberOfSections(in tableView: UITableView) -> Int {
         return presenter.numberOfSection()
     }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerview = UIView(frame: CGRect(x: 0, y: 0, width: self.categoryDetailTable.frame.width, height: 45))
         let titleLabel = UILabel(frame: CGRect(x: 20, y: 0, width: headerview.frame.width - 32, height: headerview.frame.height))
@@ -65,23 +66,23 @@ extension CategoryDetailViewController: UITableViewDelegate, UITableViewDataSour
         headerview.backgroundColor = Colors.header.uiColor
         return headerview
     }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = presenter.getCategoryDetailModel(index: indexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: CategoryListTableViewCell.identifier) as! CategoryListTableViewCell
         cell.configure(model: model)
-        
         cell.selectionStyle = .none
         return cell
-        
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let model = presenter.getCategoryDetailModel(index: indexPath) else { return }
-        
         guard let type = CategoryType(rawValue: model.type) else { return }
         switch type {
         case .image:
@@ -96,7 +97,7 @@ extension CategoryDetailViewController: UITableViewDelegate, UITableViewDataSour
         }
     }
 }
-    
+
 
 extension CategoryDetailViewController {
     func showImage(name: String) {
@@ -116,9 +117,6 @@ extension CategoryDetailViewController {
         }
     }
     
-    
-
-        
     func playVideo(name: String) {
         guard let videoURL = Bundle.main.url(forResource: name, withExtension: WithExtension.mp4.rawValue) else { return }
         let player = AVPlayer(url: videoURL)
@@ -129,10 +127,9 @@ extension CategoryDetailViewController {
         }
     }
 }
+
 extension CategoryDetailViewController: CategoryDetailView {
     func reloadTable() {
         self.categoryDetailTable.reloadData()
     }
-    
-    
 }

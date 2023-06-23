@@ -10,10 +10,12 @@ protocol CategoryDetailsUseCase{
     func getCategoryDetailsList() -> CategoryDetailModel?
     func saveCategoryModelInDB(category: CategoryDetailModel, person: Person)
     func getCategoryModel(person: Person, category: Category) -> Category?
-    func getCategoryModelForPerson(person: Person) -> CategoryDetailModel? 
+    func getCategoryModelForPerson(person: Person) -> CategoryDetailModel?
 }
+
 class CategoryDetailsUseCaseImpl: CategoryDetailsUseCase {
     let dbHelper = DBHelper()
+    
     func getCategoryDetailsList() -> CategoryDetailModel? {
         if let url =  Bundle.main.url(forResource: "Category", withExtension: "json") {
             do {
@@ -37,6 +39,7 @@ class CategoryDetailsUseCaseImpl: CategoryDetailsUseCase {
             dbHelper.update(person: person, categoryJSON: jsonString)
         } catch {}
     }
+    
     func getCategoryModel(person: Person, category: Category) -> Category? {
         let persons = dbHelper.read()
         var personCategoryModel: CategoryDetailModel?
@@ -50,6 +53,7 @@ class CategoryDetailsUseCaseImpl: CategoryDetailsUseCase {
         }
         return nil
     }
+    
     func getCategoryModelForPerson(person: Person) -> CategoryDetailModel? {
         let persons = dbHelper.read()
         var personCategoryModel: CategoryDetailModel?
@@ -58,7 +62,6 @@ class CategoryDetailsUseCaseImpl: CategoryDetailsUseCase {
                 personCategoryModel = try JSONDecoder().decode(CategoryDetailModel.self, from: currentPerson.categoryListJson.data(using: .utf8)!)
             } catch {}
         }
-       
         return personCategoryModel
     }
 }

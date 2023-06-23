@@ -12,7 +12,6 @@ protocol SignUpRouter {
     func navigateToLoginScreen()
 }
 
-
 class SignUpRouterImpl: SignUpRouter {
     
     var viewController: ViewController
@@ -20,7 +19,6 @@ class SignUpRouterImpl: SignUpRouter {
     init(viewController: ViewController) {
         self.viewController = viewController
     }
-
     
     func navigateToRegisterScreen() {
         let vc =  CommonUtility.getViewController(storyboardName: StoryBordIds.main, bundleID: StoryBordIds.registerViewController) as? RegisterViewController
@@ -31,5 +29,5 @@ class SignUpRouterImpl: SignUpRouter {
         let vc =  CommonUtility.getViewController(storyboardName: StoryBordIds.main, bundleID: StoryBordIds.loginViewController) as? LoginViewController
         self.viewController.navigationController?.pushViewController(vc!, animated: true)
     }
-
+    
 }
