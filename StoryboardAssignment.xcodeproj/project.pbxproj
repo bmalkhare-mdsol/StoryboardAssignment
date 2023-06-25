@@ -48,6 +48,7 @@
 		279B42092A40211200930C75 /* Meeting In Corridor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 279B42062A40211200930C75 /* Meeting In Corridor.mp4 */; };
 		279B42152A41663700930C75 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B42142A41663700930C75 /* ImageViewController.swift */; };
 		279E92222A456298008B1B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279E92212A456298008B1B9D /* Assets.xcassets */; };
+		279E92242A474076008B1B9D /* LocatNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E92232A474076008B1B9D /* LocatNotification.swift */; };
 		27CE3FE42A41B16B0093D45D /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 27CE3FE32A41B16B0093D45D /* Category.json */; };
 		27CE3FE62A41B1C50093D45D /* Attend To Stock.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27CE3FE52A41B1C50093D45D /* Attend To Stock.mp4 */; };
 		27CE3FE82A41B1F30093D45D /* Women On Mission.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27CE3FE72A41B1F30093D45D /* Women On Mission.mp4 */; };
@@ -146,6 +147,7 @@
 		279B42062A40211200930C75 /* Meeting In Corridor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Meeting In Corridor.mp4"; sourceTree = "<group>"; };
 		279B42142A41663700930C75 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		279E92212A456298008B1B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		279E92232A474076008B1B9D /* LocatNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatNotification.swift; sourceTree = "<group>"; };
 		27CE3FE32A41B16B0093D45D /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
 		27CE3FE52A41B1C50093D45D /* Attend To Stock.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Attend To Stock.mp4"; sourceTree = "<group>"; };
 		27CE3FE72A41B1F30093D45D /* Women On Mission.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Women On Mission.mp4"; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				277D1B582A444BE60024768A /* CommonColors.swift */,
+				279E92232A474076008B1B9D /* LocatNotification.swift */,
 			);
 			path = CommonUtility;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279E92242A474076008B1B9D /* LocatNotification.swift in Sources */,
 				277D1B592A444BE60024768A /* CommonColors.swift in Sources */,
 				2774E9DE2A39C89000EA7A71 /*  SignUpConfigurator.swift in Sources */,
 				2774E9F12A3AC9CB00EA7A71 /* CommonUtilityClass.swift in Sources */,

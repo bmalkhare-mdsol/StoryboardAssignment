@@ -195,16 +195,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-Ll-rGU">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="10" y="69" width="373" height="739"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="htp-fx-RdB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RBB-Ll-rGU" firstAttribute="leading" secondItem="htp-fx-RdB" secondAttribute="leading" id="3CD-tf-nRb"/>
-                            <constraint firstItem="RBB-Ll-rGU" firstAttribute="top" secondItem="htp-fx-RdB" secondAttribute="top" id="JjT-b9-czY"/>
-                            <constraint firstItem="htp-fx-RdB" firstAttribute="trailing" secondItem="RBB-Ll-rGU" secondAttribute="trailing" id="VMM-Ap-pTP"/>
-                            <constraint firstItem="htp-fx-RdB" firstAttribute="bottom" secondItem="RBB-Ll-rGU" secondAttribute="bottom" id="fCA-Ew-gkc"/>
+                            <constraint firstItem="RBB-Ll-rGU" firstAttribute="leading" secondItem="htp-fx-RdB" secondAttribute="leading" constant="10" id="3CD-tf-nRb"/>
+                            <constraint firstItem="RBB-Ll-rGU" firstAttribute="top" secondItem="htp-fx-RdB" secondAttribute="top" constant="10" id="JjT-b9-czY"/>
+                            <constraint firstItem="htp-fx-RdB" firstAttribute="trailing" secondItem="RBB-Ll-rGU" secondAttribute="trailing" constant="10" id="VMM-Ap-pTP"/>
+                            <constraint firstItem="htp-fx-RdB" firstAttribute="bottom" secondItem="RBB-Ll-rGU" secondAttribute="bottom" constant="10" id="fCA-Ew-gkc"/>
                         </constraints>
                     </view>
                     <connections>

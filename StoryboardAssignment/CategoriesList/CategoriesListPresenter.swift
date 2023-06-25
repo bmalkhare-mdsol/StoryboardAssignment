@@ -18,6 +18,7 @@ protocol CategoriesListPresenter {
     func getNavigationHeaderTitle() -> String
     func viewWillAppear()
     func isCellInteractive(index: IndexPath) -> Bool
+    var isAllCellsVisited: Bool {get}
     
 }
 protocol CategoriesListView {
@@ -30,6 +31,7 @@ class CategoriesListPresenterImpl: CategoriesListPresenter {
     var model: CategoryDetailModel?
     var person: Person
     var view:CategoriesListView
+    var isAllCellsVisited: Bool = false
     
     init(router: CategoriesListRouter, usecase: CategoryDetailsUseCase, person: Person, view:CategoriesListView) {
         self.router = router
@@ -50,9 +52,13 @@ class CategoriesListPresenterImpl: CategoriesListPresenter {
     func isCellInteractive(index: IndexPath) -> Bool {
         guard let categoriesList = model?.categories else {return false}
         let count = categoriesList.filter({$0.allElementsVisited}).count
+        if count == categoriesList.count {
+            self.isAllCellsVisited = true
+        }
         if count == index.row || index.row < count {
             return true
         }
+        
         return false
     }
     
